@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .main_body main p {
+        text-align: justify;
+        text-decoration: solid;
+        padding: 10px 90px;
+      }
+      .videoplayer {
+        border-radius: 50px;
+        border-style: groove;
+        padding: 20px;
+
+        /* box-shadow: 2px 2px; */
+      }
+
+      /* Popular Places */
+      .carousel {
+        padding-top: 20px;
+      }
+      .popular h2 {
+        font-weight: bolder;
+        font-size: 2rem;
+        margin-bottom: 25px;
+      }
+
+      /* Must visit places */
+      .cards-wrapper {
+        display: flex;
+        justify-content: center;
+      }
+      .card img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      .card {
+        margin: 0 0.5em;
+        box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+        border: none;
+        border-radius: 0;
+      }
+      .carousel-inner {
+        padding: 1em;
+      }
+      .carousel-control-prev,
+      .carousel-control-next {
+        background-color: #e1e1e1;
+        width: 5vh;
+        height: 5vh;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      @media (min-width: 768px) {
+        .card img {
+          height: 11em;
+        }
+      }
+
+      .mustvisit {
+        margin-bottom: 50px;
+      }
+
+      .mustvisit h2 {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      /* <!-- Explore before you visit --> */
+
+      .explorebefore h2 {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 2rem;
+        margin-bottom: 45px;
+      }
+      .card-deck {
+        margin-bottom: 80px;
+      }
+
+      /* Experiences */
+      .Experiences h2 {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 2rem;
+        margin-bottom: 25px;
+      }
+      .Experiences .row {
+        margin: 20px -15px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px 80px 0px 80px;
+        /* justify-content: center; */
+        /* margin-bottom: 50px; */
+      }
+      .Experiences .row .col-sm-12 .card {
+        width: 100%;
+        border-radius: 4px;
+        position: relative;
+        padding: 30px;
+        margin-right: -3rem;
+        border: none;
+      }
+      .Experiences .col-sm-12 {
+        width: 100%;
+        flex: 0 0 20%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 0 10px;
+        position: relative;
+        min-height: 1px;
+      }
+
+      .Experiences .card-img-overlay {
+        display: block;
+        width: 100%;
+        border-radius: 4px;
+        padding: 30px;
+        margin-right: -3rem;
+        overflow: hidden;
+        position: relative;
+      }
+      /* .Experiences .title-name {
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        color: #fff;
+        transform: scale(0);
+        transition: all 0.2s ease;
+        text-transform: capitalize;
+      }
+      .Experiences .experience-title {
+        position: absolute;
+        bottom: 0;
+        padding: 5px 0px;
+        color: #fff;
+        font-size: 16px;
+        background: rgba(0, 0, 0, 0.42);
+        width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        z-index: 2;
+        text-transform: capitalize;
+      } */
+
+      .Experiences .expcards .card-img-overlay .experience-title {
+        color: black;
+        /* align-items: baseline; */
+        font-size: 0.9rem;
+        font-weight: bolder;
+      }
+
+      .Experiences {
+        margin-bottom: 60px;
+        border: 10px solid red;
+      }
+
+      /* festivals */
+
+      .festivals {
+        margin-bottom: 50px;
+      }
+
+      .festivals h2 {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 2rem;
+        margin-bottom: 25px;
+      }
+
+      .festivals .cards-wrapper {
+        display: flex;
+        justify-content: center;
+      }
+      .festivals .card img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      .festivals .card {
+        margin: 0 0.5em;
+        box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+        border: none;
+        border-radius: 0;
+      }
+      .festivals .carousel-inner {
+        padding: 1em;
+      }
+      .festivals .carousel-control-prev,
+      .festivals .carousel-control-next {
+        background-color: grey;
+        width: 5vh;
+        height: 5vh;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      @media (min-width: 768px) {
+        .festivals .card img {
+          height: 11em;
+        }
+      }
+
+      .footer {
+        margin-top: 50px;
+        background-color: lightgray;
+      }
+    </style>
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="Navigation">
+      <nav class="navbar navbar-expand-lg py-3 navbar-dark shadow-sm">
+        <div class="container">
+          <a href="Home.html" class="navbar-brand">
+            <!-- Logo Image -->
+            <img
+              src="./Images/Visit_India_logo.png"
+              height="80"
+              width="150"
+              alt=""
+              class="d-inline-block align-middle mr-2"
+            />
+            <!-- Logo Text -->
+            <!-- <span class="text-uppercase font-weight-bold">Tourism</span> -->
+          </a>
+
+          <button
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            class="navbar-toggler"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a href="Home.html" class="nav-link"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Destinations
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Popular Destinations</a>
+                  <a class="dropdown-item" href="#">Spiritual Destinations</a>
+                  <a class="dropdown-item" href="#">Heritage Sites</a>
+                  <a class="dropdown-item" href="#"
+                    >State & Union Territories</a
+                  >
+                  <a class="dropdown-item" href="#">All Destinations</a>
+
+                  <!-- <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a> -->
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="Experiences.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Experiences
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="Experiences.html"
+                    >Festivals & Events</a
+                  >
+                  <a class="dropdown-item" href="Experiences.html">Heritage</a>
+                  <a class="dropdown-item" href="Experiences.html">Spiritual</a>
+                  <a class="dropdown-item" href="Experiences.html">Adventure</a>
+                  <a class="dropdown-item" href="Experiences.html"
+                    >Nature And Wildlife</a
+                  >
+                  <a class="dropdown-item" href="Experiences.html">Art</a>
+                  <a class="dropdown-item" href="Experiences.html"
+                    >Food & Cuisine</a
+                  >
+                  <a class="dropdown-item" href="Experiences.html">Luxury</a>
+                  <a class="dropdown-item" href="Experiences.html"
+                    >Yoga & Wellness</a
+                  >
+                  <a class="dropdown-item" href="Experiences.html"
+                    >UNESCO World Heritage Sites</a
+                  >
+                  <a class="dropdown-item" href="#">Museums in India</a>
+                  <a class="dropdown-item" href="#">Crafts in India</a>
+                  <!-- <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div> -->
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="Home.html" class="nav-link">Stay</a>
+              </li>
+              <li class="nav-item">
+                <a href="Shop.html" class="nav-link">Shops</a>
+              </li>
+              <li class="nav-item">
+                <a href="Tours.html" class="nav-link">Tours</a>
+              </li>
+              <li class="nav-item">
+                <a href="travel_essentials.html" class="nav-link">Essentials</a>
+              </li>
+              <li class="nav-item">
+                <a href="ContactUs.html" class="nav-link">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="main_body">
+      <main>
+        <article class="intro" align="center">
+          <video
+            controls
+            height="550"
+            width="950"
+            preload="auto"
+            autoplay="autoplay"
+            loop="loop"
+            class="videoplayer"
+          >
+            <source src="./Images/India_Tourism_Compilation.mp4" />
+          </video>
+          <p>
+            One of the oldest civilisations in the world, India is a mosaic of
+            multicultural experiences. With a rich heritage and myriad
+            attractions, the country is among the most popular tourist
+            destinations in the world. It covers an area of 32, 87,263 sq. km,
+            extending from the snow-covered Himalayan heights to the tropical
+            rain forests of the south. As the 7th largest country in the world,
+            India stands apart from the rest of Asia, marked off as it is by
+            mountains and the sea, which give the country a distinct
+            geographical entity. Fringed by the Great Himalayas in the north, it
+            stretches southwards and at the Tropic of Cancer, tapers off into
+            the Indian Ocean between the Bay of Bengal on the east and the
+            Arabian Sea on the west. As you travel the expanse of the country,
+            you are greeted by diverse nuances of cuisines, faiths, arts,
+            crafts, music, nature, lands, tribes, history and adventure sports.
+            India has a mesmeric conflation of the old and the new. As the
+            bustling old bazaars rub shoulders with swanky shopping malls, and
+            majestic monuments accompany luxurious heritage hotels, the
+            quintessential traveller can get the best of both worlds. Head to
+            the mountains, enjoy a beach retreat or cruise through the golden
+            Thar, India has options galore for all.
+          </p>
+        </article>
+        <br />
+        <div class="popular">
+          <header align="center">
+            <h2>Popular in India</h2>
+            India is a home to the finest architectural heritage, serene ghats,
+            spectacular landscapes and largest tiger reserve
+          </header>
+          <main>
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="2"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="3"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="4"
+                ></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    class="d-block w-100"
+                    src="./Images/SOU.jpeg"
+                    alt="First slide"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Statue Of Unity</h5>
+                    <p>
+                      Its huge, almost gigantic! That is the first reaction most
+                      people have as they speed down the winding road leading to
+                      the towering Statue of Unity (SoU). A long bridge connects
+                      the mainland to the..
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./Images/MostFamoous.jpeg"
+                    alt="Second slide"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Most Famous</h5>
+                    <p>
+                      India is a remarkable tourist destination that offers a
+                      plethora of experiences to travellers. From the grandiose
+                      Taj Mahal, one of the wonders of the world, to opulent
+                      palaces and forts...
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./Images/MuseumsInIndia.jpeg"
+                    alt="Third slide"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Museums in India</h5>
+                    <p>
+                      The glorious ancient history of India withits rich
+                      cultural heritage and a vibrant potpourri of traditions
+                      has beenimmortalised in various museums and galleries
+                      across the country. Frompre-historic..
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./Images/_Forts&Palaces.jpg"
+                    alt="Forth slide"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Forts and Palaces</h5>
+                    <p>
+                      India is blessed with heritage riches and a regal lineage.
+                      Vestiges of Indian royalty can be felt in the various
+                      forts and palaces speckled across the country. From hill
+                      forts in Rajasthan to...
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./Images/TheLandOfGandhi.jpeg"
+                    alt="Fifth slide"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>The Land Of Gandhi</h5>
+                    <p>
+                      The legacy of Mahatma Gandhi, the Father of the Nation, is
+                      perfectly preserved in India. From various museums and
+                      memorials to Gandhiji's ashram, there are various
+                      stopovers in the country that...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </main>
+        </div>
+
+        <div class="mustvisit">
+          <header align="center">
+            <h2>Must Visit Places</h2>
+            From historical cities to natural splendours, come see the best of
+            India
+          </header>
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="cards-wrapper">
+                  <div class="card d-none d-md-block">
+                    <img
+                      src="https://www.deccanherald.com/sites/dh/files/article_images/2020/05/19/file72kca7re047ujfvc2do-1017802106-1566537567.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">statue of unity</h5>
+                      <p class="card-text">
+                        It's huge. almost gigantic! That is the first reaction
+                        most people....
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card d-none d-md-block">
+                    <img
+                      src="./Images/munnar.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">munnar</h5>
+                      <p class="card-text">
+                        A lush carpet of rolling green,interrupted by Iow rises
+                        of mountains...
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card d-none d-md-block">
+                    <img
+                      src="./Images/shilong.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Shilong</h5>
+                      <p class="card-text">
+                        Colonial-era charm, a landscape of rolling green and
+                        pristine...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                  <div class="card d-none d-md-block">
+                    <img
+                      src="./Images/wayanad.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Wayanad</h5>
+                      <p class="card-text">
+                        A coffer of coffee.cardamom and tea plantations. which
+                        envelope...
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card d-none d-md-block">
+                    <img
+                      src="./Images/thrissur.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Thrissur</h5>
+                      <p class="card-text">
+                        Often referred to as the cultural capital of Kerala,
+                        Thrissur is...
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card d-none d-md-block">
+                    <img
+                      src="./Images/ooty.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Outy</h5>
+                      <p class="card-text">
+                        A quaint hill town, perched against the backdrop of
+                        Doddabetta (2,637...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                  <div class="card d-none d-md-block">
+                    <img
+                      src="./Images/dalhousie.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Dalhousie</h5>
+                      <p class="card-text">
+                        Perched atop a rocky ridge. with snow-clad Dhauladhar
+                        mountains and...
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card d-none d-md-block">
+                    <img
+                      src="./Images/dharmshala.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Dharamsala</h5>
+                      <p class="card-text">
+                        A pristine green expanse ringed by the mist-shrouded
+                        Himalayas and...
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card d-none d-md-block">
+                    <img
+                      src="./Images/karawatti.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Kavaratti</h5>
+                      <p class="card-text">
+                        Exerting a magnetic pull over scuba divers, snorkellers
+                        and nature...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="explorebefore">
+      <h2>Explore Before You visit</h2>
+      <div class="card-deck">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Khajuraho - Poetry in Unity</h5>
+            <a
+              href="https://artsandculture.google.com/story/1AXhvBBedMbNLw"
+              target="_blank"
+            >
+              <p class="card-text">Explore More>></p>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Ajanta Caves</h5>
+            <a
+              href="https://artsandculture.google.com/story/kwWx7U31h3nrJQ"
+              target="_blank"
+            >
+              <p class="card-text">Explore More>></p>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Taj Mahal-Poetry in Love</h5>
+            <a
+              href="https://artsandculture.google.com/story/WAUxKuf8iRygIA"
+              target="_blank"
+            >
+              <p class="card-text">Explore More>></p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Experiences">
+      <header align="center">
+        <h2>Immersive Experiences</h2>
+        In the land of opulence, let loose and discover yourself
+      </header>
+      <main>
+        <div class="expcards">
+          <div class="row justify-content-center">
+            <div class="col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img"
+                  src="./Images/heritage.png"
+                  alt="Card image"
+                />
+                <div class="card-img-overlay">
+                  <span class="experience-title">Heritage</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img"
+                  src="./Images/adventure.jpg"
+                  alt="Card image"
+                />
+                <div class="card-img-overlay">
+                  <span class="experience-title">Adventure</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="card">
+                <img class="card-img" src="./Images/art.jpg" alt="Card image" />
+                <div class="card-img-overlay">
+                  <span class="experience-title">Art</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img"
+                  src="./Images/Food&Cuisine.jpg"
+                  alt="Card image"
+                />
+                <div class="card-img-overlay">
+                  <span class="experience-title">Food and cuisine</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img"
+                  src="./Images/Luxury.jpg"
+                  alt="Card image"
+                />
+                <div class="card-img-overlay">
+                  <!-- <div class="title-name">Luxury</div> -->
+                  <span class="experience-title">Luxury</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img"
+                  src="./Images/nature&wildlifeindia.jpg"
+                  alt="Card image"
+                />
+                <div class="card-img-overlay">
+                  <span class="experience-title">Nature and Wildlife</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img"
+                  src="./Images/spiritual.jpg"
+                  alt="Card image"
+                />
+                <div class="card-img-overlay">
+                  <span class="experience-title">Spiritual</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img"
+                  src="./Images/MuseumsInIndia.jpeg"
+                  alt="Card image"
+                />
+                <div class="card-img-overlay">
+                  <span class="experience-title">Museums In India</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img"
+                  src="./Images/Yoga&Wellness.jpg"
+                  alt="Card image"
+                />
+                <div class="card-img-overlay">
+                  <span class="experience-title">Yoga and Wellness</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img"
+                  src="./Images/shopping.jpg"
+                  alt="Card image"
+                />
+                <div class="card-img-overlay">
+                  <span class="experience-title">Shopping</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="festivals">
+      <header align="center">
+        <h2>Celebrate With Us</h2>
+        As you travel through the country, be a part of our festivals and feasts
+      </header>
+      <main>
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="cards-wrapper">
+                <div class="card d-none d-md-block">
+                  <img
+                    src="./Images/rathayatra.jpeg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Rath yatra</h5>
+                    <p class="card-text">
+                      Ratha Yatra, the Festival of Chariots, is an important
+                      Hindu festival that takes places every year, during the
+                      summer. Ratha Yatra is celebrated around the world, but
+                      the most famous and largest celebrations take place in
+                      Puri, India. The celebrations take place at the Jagannath
+                      Temple in Puri.
+                    </p>
+                  </div>
+                </div>
+                <div class="card d-none d-md-block">
+                  <img
+                    src="./Images/rakshabandhan.jpeg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Raksha Bandhan</h5>
+                    <p class="card-text">
+                      Raksha Bandhan is a festival of Hindus which is celebrated
+                      to show love and unity. This festival is celebrated in the
+                      Sawan month as per the lunar calendar, and on the full
+                      moon day; therefore, it is also called Rakhi Purnima. On
+                      this auspicious day, brothers promise to safeguard their
+                      sisters from all evils
+                    </p>
+                  </div>
+                </div>
+                <div class="card d-none d-md-block">
+                  <img
+                    src="./Images/independence.jpeg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Independence Day</h5>
+                    <p class="card-text">
+                      Independence Day marks the end of British rule in 1947 and
+                      the establishment of a free and independent Indian nation.
+                      It also marks the anniversary of the partition of the
+                      subcontinent into two countries, India and Pakistan, which
+                      occurred at midnight on August 14- 15, 1947
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <div class="card d-none d-md-block">
+                  <img
+                    src="./Images/ganesh.jpeg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Ganesh Chaturthi</h5>
+                    <p class="card-text">
+                      Ganesha Chaturthi is the festival celebrating the rebirth
+                      God Ganesha. The elephant-headed God has an interesting
+                      story. He was created in a completely human form by the
+                      Goddess Parvati. She moulded him from clay or the earth
+                      from her own body (versions vary) and gave it life
+                    </p>
+                  </div>
+                </div>
+                <div class="card d-none d-md-block">
+                  <img
+                    src="./Images/navratri.jpeg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Navratri</h5>
+                    <p class="card-text">
+                      Navratri is a time when Hindus celebrate the goddess Durga
+                      for killing the demon, Mahishasura. A more powerful God,
+                      Lord Brahma, had blessed Mahishasura with the gift of
+                      immortality because of his dedication to him, which meant
+                      he could never die.
+                    </p>
+                  </div>
+                </div>
+                <div class="card d-none d-md-block">
+                  <img
+                    src="./Images/diwali.jpeg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Diwali</h5>
+                    <p class="card-text">
+                      Diwali is the five-day Festival of Lights, celebrated by
+                      millions of Hindus, Sikhs and Jains across the world.
+                      Diwali, which for some also coincides with harvest and new
+                      year celebrations, is a festival of new beginnings and the
+                      triumph of good over evil and light over darkness
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </main>
+    </div>
+
+    <div class="blogs">
+      <header align="center">
+        <h2>Blogs and Vlogs</h2>
+        An insight to the incredible experiences in India
+      </header>
+      <br /><br />
+      <main align="center">
+        <button type="button" class="btn btn-primary">
+          <a href="./Blogs.html" style="text-decoration: rgba(11, 11, 11, 0.18)"
+            >Explore More</a
+          >
+        </button>
+      </main>
+    </div>
+
+    <div class="footer">
+      <section class="section footer footer-nav-section pt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-link-item">
+              <h5 class="title title-xs">State Tourism Websites</h5>
+              <div class="state-tourism">
+                <ul class="list-inline footer-nav footer-important">
+                  <li>
+                    <a
+                      href="https://tourism.ap.gov.in"
+                      title="Andhra Pradesh"
+                      target="_blank"
+                    >
+                      Andhra Pradesh
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="http://www.arunachaltourism.com"
+                      title="Arunachal Pradesh"
+                      target="_blank"
+                    >
+                      Arunachal Pradesh
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://tourism.assam.gov.in"
+                      title="Assam"
+                      target="_blank"
+                    >
+                      Assam
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://tourism.bihar.gov.in"
+                      title="Bihar"
+                      target="_blank"
+                    >
+                      Bihar
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.chhattisgarhtourism.in"
+                      title="Chhattisgarh"
+                      target="_blank"
+                    >
+                      Chhattisgarh
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://goa-tourism.com"
+                      title="Goa"
+                      target="_blank"
+                    >
+                      Goa
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="http://www.arunachaltourism.com"
+                      title="Gujarat"
+                      target="_blank"
+                    >
+                      Gujarat
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="http://haryanatourism.gov.in"
+                      title="Haryana"
+                      target="_blank"
+                    >
+                      Haryana
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://himachaltourism.gov.in/"
+                      title="Himachal Pradesh"
+                      target="_blank"
+                    >
+                      Himachal Pradesh
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://tourism.jharkhand.gov.in"
+                      title="Jharkhand"
+                      target="_blank"
+                    >
+                      Jharkhand
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="http://www.karnatakatourism.org"
+                      title="Karnataka"
+                      target="_blank"
+                    >
+                      Karnataka
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-link-item">
+              <h5 class="title title-xs">UT Tourism Websites</h5>
+
+              <ul class="list-inline footer-nav">
+                <li>
+                  <a
+                    href="https://www.andaman.gov.in"
+                    title="Andaman and Nicobar"
+                    target="_blank"
+                  >
+                    Andaman and Nicobar
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="http://chandigarhtourism.gov.in"
+                    title="Chandigarh"
+                    target="_blank"
+                  >
+                    Chandigarh
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.tourismdddnh.in"
+                    title="Dadra and Nagar Haveli"
+                    target="_blank"
+                  >
+                    Dadra and Nagar Haveli
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.tourismdddnh.in"
+                    title="Daman and Diu"
+                    target="_blank"
+                  >
+                    Daman and Diu
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="http://www.delhitourism.gov.in"
+                    title="Delhi"
+                    target="_blank"
+                  >
+                    Delhi
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.jktdc.co.in"
+                    title="Jammu and Kashmir"
+                    target="_blank"
+                  >
+                    Jammu and Kashmir
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://leh.nic.in" title="Ladakh" target="_blank">
+                    Ladakh
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.lakshadweeptourism.com"
+                    title="Lakshadweep"
+                    target="_blank"
+                  >
+                    Lakshadweep
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="http://www.pondytourism.in"
+                    title="Puducherry"
+                    target="_blank"
+                  >
+                    Puducherry
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-5 col-xl-2 footer-link-item">
+              <h5 class="title title-xs">Contact Details</h5>
+              <p>
+                Under Secretary (IT)<br />
+                Ministry of Tourism, <br />
+                126 Transport Bhawan<br />
+                Sansad Marg,<br />
+                New Delhi<br />
+                ☏&nbsp;<a title="tel" href="tel:01123311237" target="_blank"
+                  >+91-011 23311237</a
+                ><br />
+                ✉&nbsp;<a
+                  title="mailto"
+                  href="mailto:info.mot@gov.in"
+                  target="_blank"
+                  >info.mot@gov.in</a
+                ><br />
+              </p>
+
+              <!-- Social Media  Section -->
+              <div class="text-left social-media-section">
+                <ul class="nav socail-nav justify-content-left">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      target="_blank"
+                      title="Facebook"
+                      href="https://www.facebook.com/incredibleindia/"
+                    >
+                      <i
+                        data-toggle="tooltip"
+                        title="Facebook"
+                        class="uc-icon fa-facebook"
+                      ></i>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      target="_blank"
+                      title="Twitter"
+                      href="https://twitter.com/incredibleindia"
+                    >
+                      <i
+                        data-toggle="tooltip"
+                        title="Twitter"
+                        class="uc-icon fa-twitter"
+                      ></i>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      target="_blank"
+                      title="Instagram"
+                      href="https://www.instagram.com/incredibleindia"
+                    >
+                      <i
+                        data-toggle="tooltip"
+                        title="Instagram"
+                        class="uc-icon fa-instagram"
+                      ></i>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      target="_blank"
+                      title="Youtube"
+                      href="https://www.youtube.com/channel/UCMxJPchGLE_CJ1MJbJy-xDQ"
+                    >
+                      <i
+                        data-toggle="tooltip"
+                        title="Youtube"
+                        class="uc-icon fa-youtube"
+                      ></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- # Social media Section End -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <br />
+      <br />
+      <table>
+        <tr>
+          <form action="subscribe" method="get">
+            <td width="200px">
+              <h3><u>Newsletter</u></h3>
+            </td>
+
+            <td><label for="name">Name: </label></td>
+            <td width="300px"><input type="text" name="name" id="name" /></td>
+
+            <td><label for="email">Email: </label></td>
+            <td width="300px">
+              <input type="email" name="Email" id="email" />
+            </td>
+
+            <td><button type="submit">Subscribe</button></td>
+          </form>
+        </tr>
+      </table>
+    </div>
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+</html>

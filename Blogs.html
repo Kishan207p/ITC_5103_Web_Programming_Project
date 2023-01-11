@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .header {
+        margin-top: 25px;
+      }
+      .header p {
+        padding: 0px 170px;
+        text-align: justify;
+        /* justify-content: flex-end; */
+      }
+      .header h3 {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      .row {
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
+      .row .col-sm {
+        padding: 0 40px;
+        text-align: justify;
+      }
+
+      .row .col-sm .anu {
+        display: block;
+        margin: 10px auto 10px auto;
+        width: 75%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Navigation">
+      <nav class="navbar navbar-expand-lg py-3 navbar-dark shadow-sm">
+        <div class="container">
+          <a href="Home.html" class="navbar-brand">
+            <!-- Logo Image -->
+            <img
+              src="./Images/Visit_India_logo.png"
+              height="80"
+              width="150"
+              alt=""
+              class="d-inline-block align-middle mr-2"
+            />
+            <!-- Logo Text -->
+            <!-- <span class="text-uppercase font-weight-bold">Tourism</span> -->
+          </a>
+
+          <button
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            class="navbar-toggler"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a href="Home.html" class="nav-link"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Destinations
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Popular Destinations</a>
+                  <a class="dropdown-item" href="#">Spiritual Destinations</a>
+                  <a class="dropdown-item" href="#">Heritage Sites</a>
+                  <a class="dropdown-item" href="#"
+                    >State & Union Territories</a
+                  >
+                  <a class="dropdown-item" href="#">All Destinations</a>
+
+                  <!-- <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a> -->
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="Experiences.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Experiences
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="Experiences.html"
+                    >Festivals & Events</a
+                  >
+                  <a class="dropdown-item" href="Experiences.html">Heritage</a>
+                  <a class="dropdown-item" href="Experiences.html">Spiritual</a>
+                  <a class="dropdown-item" href="Experiences.html">Adventure</a>
+                  <a class="dropdown-item" href="Experiences.html"
+                    >Nature And Wildlife</a
+                  >
+                  <a class="dropdown-item" href="Experiences.html">Art</a>
+                  <a class="dropdown-item" href="Experiences.html"
+                    >Food & Cuisine</a
+                  >
+                  <a class="dropdown-item" href="Experiences.html">Luxury</a>
+                  <a class="dropdown-item" href="Experiences.html"
+                    >Yoga & Wellness</a
+                  >
+                  <a class="dropdown-item" href="Experiences.html"
+                    >UNESCO World Heritage Sites</a
+                  >
+                  <a class="dropdown-item" href="#">Museums in India</a>
+                  <a class="dropdown-item" href="#">Crafts in India</a>
+                  <!-- <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div> -->
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="Home.html" class="nav-link">Stay</a>
+              </li>
+              <li class="nav-item">
+                <a href="Shop.html" class="nav-link">Shops</a>
+              </li>
+              <li class="nav-item">
+                <a href="Tours.html" class="nav-link">Tours</a>
+              </li>
+              <li class="nav-item">
+                <a href="travel_essentials.html" class="nav-link">Essentials</a>
+              </li>
+              <li class="nav-item">
+                <a href="ContactUs.html" class="nav-link">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <header class="header">
+      <h3>Top Travel Bloggers</h3>
+      <p>
+        Nowadays it is impossible to understand the world of travel & tourism
+        without the opinion of bloggers; what they say on Facebook, twitter and
+        other social networks matters. Thanks to the access to our social media
+        accounts through the smartphones it has taken an even greater role.
+        Blogging is a trend that will do nothing but grow at the expense of the
+        magazines; especially specialist media will be in the background.
+        Today's traveller looks for experiences through travel blogs, which have
+        become a source of inspiration for destination search and vacation
+        planning.
+      </p>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <h3>Anuradha Goyal</h3>
+          <img
+            src="./Images/anuradha.jpg"
+            alt="Anuradha Goyal"
+            width="300"
+            height="150"
+            class="anu"
+          />
+          <p>Anuradha Goyal &#8211; Traveler, Blogger and Book reviewer</p>
+          <p>
+            When it comes to exploring new destinations, there's no stopping
+            this gypsy woman, who has made traveling the passion of her life.
+            The innate wanderlust in Anuradha Goyal has taken her to almost
+            every state in India and to 15 countries beyond the borders of this
+            land. The travel blog that she has been writing since 2004 is a
+            picturesque virtual diary, full of inspiring tales, and rich and
+            useful information about the history and culture of the places she
+            travels to. She is also a book reviewer and the author of
+            <em>The Mouse Charmers — Digital Pioneers of India</em>.
+          </p>
+          <p>
+            <strong>Blog</strong>:
+            <a href="https://www.inditales.com/">https://www.inditales.com/</a>
+          </p>
+        </div>
+        <div class="col-sm">
+          <h3>Venkat Ganesh</h3>
+          <img
+            src="./Images/venkat.jpg"
+            alt="Venkat Ganesh"
+            width="300"
+            height="150"
+            class="anu"
+          />
+          <p>Venkat Ganesh &#8211; Travel Blogger and Pro at Road Trip</p>
+          <p>
+            Road trips are a thrilling way of discovering new destinations, and
+            Venkat Ganesh is a pro at that. A well-known travel blogger who
+            loves to be on the road, with his bike as the sole travel companion,
+            Venkat quit his job to satiate his travel hunger. His blog depicts
+            exciting sagas of his road journeys; at the same time, dishing out
+            information for backpackers and intrepid travelers, who are always
+            raring to go that extra mile in pursuit of their dream destinations.
+            You will be amazed to read about his unplanned journeys that have
+            worked out to be such exciting adventures in themselves.
+          </p>
+          <p>
+            <strong>Blog</strong>:
+            <a href="http://www.indiabackpackmotorbike.com/"
+              >http://www.indiabackpackmotorbike.com/</a
+            >
+          </p>
+        </div>
+        <div class="col-sm">
+          <h3>Shivya Nath</h3>
+          <img
+            src="./Images/shivya.jpg"
+            alt="Shivya Nath"
+            width="300"
+            height="150"
+            class="anu"
+          />
+          <p>Shivya Nath &#8211; Adventurer Traveler</p>
+          <p>
+            It takes a lot of courage to move away from the comfort zone of a
+            cushioned corporate job and venture out on the uncertain roads to
+            fulfill one's passion for traveling. Ask Shivya Nath, for she's one
+            avid adventurer who's been there and done that all. Yes, this woman
+            quit her corporate job and started following her heart in 2011, when
+            she was just 23 years old. Today, a few years down the lane, she is
+            as happy as a free bird, discovering new places and sharing her
+            experiences on her award-winning blog. If you have a thing for solo
+            traveling, you must not miss Shivya Nath's writings. Her take on
+            solo travels and discovering lesser-known destinations are a hit
+            with readers.
+          </p>
+          <p>
+            <strong>Blog</strong>:
+            <a href="https://the-shooting-star.com/"
+              >https://the-shooting-star.com/</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm">
+          <h3>Siddhartha Joshi</h3>
+          <img
+            src="./Images/siddhartha.jpg"
+            alt="Siddhartha Joshi"
+            width="300"
+            height="150"
+            class="anu"
+          />
+          <p>Siddhartha Joshi &#8211; Travel Blogger, Designer, Photographer</p>
+          <p>
+            Siddhartha Joshi wears many hats with ease. He is an acknowledged
+            travel blogger, designer, photographer, all rolled into one
+            individual. His quest for discovering new places has taken him far
+            and wide across the world, but he doesn't stop there! He has taken
+            it upon himself to share the details of his journeys through his
+            blog 'The Wanderer', which captures the essence of a place by
+            depicting its architecture, culture, and street food. You can also
+            come across reviews of hotels, restaurants, and cafes on his blog,
+            highlighted with his excellent photography. He got featured in
+            several publications, including the Times of India, Business
+            Standard, Hindustan Times, etc. and also got nominated for Indian
+            Blogger awards. When you want to experience a place through words as
+            well as pictures, you know what to read!
+          </p>
+          <p>
+            <strong>Blog</strong>:
+            <a href="https://www.sid-thewanderer.com/"
+              >https://www.sid-thewanderer.com/</a
+            >
+          </p>
+        </div>
+        <div class="col-sm">
+          <h3>Ankita Sinha</h3>
+          <img
+            src="./Images/ankita.jpg"
+            alt="Ankita Sinha"
+            width="300"
+            height="150"
+            class="anu"
+          />
+          <p>Ankita Sinha &#8211; A travel adventure fashion blogger</p>
+          <p>
+            An avid traveler and an even more avid travel blogger, Ankita Sinha
+            has her heart clearly set on exploring the wide world out there.
+            Keeping true to her desire, she has traveled to no less than 7
+            countries within a span of just 2 years. If you go through her blog,
+            you will realize that she has a way with words too and manages to
+            depict her travel stories in a beautiful way. A travel adventure
+            fashion blogger, she is often in search of an adrenaline rush. If
+            you are interested in exploring the adventurous side of a
+            destination, the blog of this award-winning travel enthusiast is the
+            one you should be scrolling through.
+          </p>
+          <p>
+            <strong>Blog</strong>:
+            <a href="http://www.ankionthemove.com/"
+              >http://www.ankionthemove.com/</a
+            >
+          </p>
+        </div>
+        <div class="col-sm">
+          <h3>Dheeraj Sharma</h3>
+          <img
+            src="./Images/dheeraj.jpg"
+            alt="Dheeraj Sharma"
+            width="300"
+            height="150"
+            class="anu"
+          />
+          <p>Dheeraj Sharma &#8211; Software Professional and Road Tripper</p>
+          <p>
+            His blog is titled 'Devil on Wheels', which is in sync with his
+            desire to drive across new destinations and share his experiences
+            through his blog. By profession, Dheeraj is a software professional
+            but his heart lies in exploring new places by road. He has a special
+            affinity for the Himalayas, and his blog posts depict his infinite
+            love for this region. In fact, you can find information about
+            several off-beat destinations in the Himalayan region in his travel
+            writings. If you are planning to explore the Himalayas or the
+            Leh-Ladakh territory, Dheeraj's blog is a must read.
+          </p>
+          <p>
+            <strong>Blog</strong>:
+            <a href="https://devilonwheels.com/">https://devilonwheels.com/</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <!-- <table border="1">
+      <tr align="center">
+        <td>
+          <h3>Anuradha Goyal</h3>
+          <img
+            src="./Images/anuradha.jpg"
+            alt="Anuradha Goyal"
+            width="300"
+            height="150"
+          />
+          <p>Anuradha Goyal &#8211; Traveler, Blogger and Book reviewer</p>
+          <p>
+            When it comes to exploring new destinations, there's no stopping
+            this gypsy woman, who has made traveling the passion of her life.
+            The innate wanderlust in Anuradha Goyal has taken her to almost
+            every state in India and to 15 countries beyond the borders of this
+            land. The travel blog that she has been writing since 2004 is a
+            picturesque virtual diary, full of inspiring tales, and rich and
+            useful information about the history and culture of the places she
+            travels to. She is also a book reviewer and the author of
+            <em>The Mouse Charmers — Digital Pioneers of India</em>.
+          </p>
+          <p>
+            <strong>Blog</strong>:
+            <a href="https://www.inditales.com/">https://www.inditales.com/</a>
+          </p>
+        </td>
+        <td>
+          <h3>Venkat Ganesh</h3>
+          <img
+            src="./Images/venkat.jpg"
+            alt="Venkat Ganesh"
+            width="300"
+            height="150"
+          />
+          <p>Venkat Ganesh &#8211; Travel Blogger and Pro at Road Trip</p>
+          <p>
+            Road trips are a thrilling way of discovering new destinations, and
+            Venkat Ganesh is a pro at that. A well-known travel blogger who
+            loves to be on the road, with his bike as the sole travel companion,
+            Venkat quit his job to satiate his travel hunger. His blog depicts
+            exciting sagas of his road journeys; at the same time, dishing out
+            information for backpackers and intrepid travelers, who are always
+            raring to go that extra mile in pursuit of their dream destinations.
+            You will be amazed to read about his unplanned journeys that have
+            worked out to be such exciting adventures in themselves.
+          </p>
+          <p>
+            <strong>Blog</strong>:
+            <a href="http://www.indiabackpackmotorbike.com/"
+              >http://www.indiabackpackmotorbike.com/</a
+            >
+          </p>
+        </td>
+        <td>
+          <h3>Shivya Nath</h3>
+          <img
+            src="./Images/shivya.jpg"
+            alt="Shivya Nath"
+            width="300"
+            height="150"
+          />
+          <p>Shivya Nath &#8211; Adventurer Traveler</p>
+          <p>
+            It takes a lot of courage to move away from the comfort zone of a
+            cushioned corporate job and venture out on the uncertain roads to
+            fulfill one's passion for traveling. Ask Shivya Nath, for she's one
+            avid adventurer who's been there and done that all. Yes, this woman
+            quit her corporate job and started following her heart in 2011, when
+            she was just 23 years old. Today, a few years down the lane, she is
+            as happy as a free bird, discovering new places and sharing her
+            experiences on her award-winning blog. If you have a thing for solo
+            traveling, you must not miss Shivya Nath's writings. Her take on
+            solo travels and discovering lesser-known destinations are a hit
+            with readers.
+          </p>
+          <p>
+            <strong>Blog</strong>:
+            <a href="https://the-shooting-star.com/"
+              >https://the-shooting-star.com/</a
+            >
+          </p>
+        </td>
+      </tr>
+      <tr align="center">
+        <td>
+          <h3>Siddhartha Joshi</h3>
+          <img
+            src="./Images/siddhartha.jpg"
+            alt="Siddhartha Joshi"
+            width="300"
+            height="150"
+          />
+          <p>Siddhartha Joshi &#8211; Travel Blogger, Designer, Photographer</p>
+          <p>
+            Siddhartha Joshi wears many hats with ease. He is an acknowledged
+            travel blogger, designer, photographer, all rolled into one
+            individual. His quest for discovering new places has taken him far
+            and wide across the world, but he doesn't stop there! He has taken
+            it upon himself to share the details of his journeys through his
+            blog 'The Wanderer', which captures the essence of a place by
+            depicting its architecture, culture, and street food. You can also
+            come across reviews of hotels, restaurants, and cafes on his blog,
+            highlighted with his excellent photography. He got featured in
+            several publications, including the Times of India, Business
+            Standard, Hindustan Times, etc. and also got nominated for Indian
+            Blogger awards. When you want to experience a place through words as
+            well as pictures, you know what to read!
+          </p>
+          <p>
+            <strong>Blog</strong>:
+            <a href="https://www.sid-thewanderer.com/"
+              >https://www.sid-thewanderer.com/</a
+            >
+          </p>
+        </td>
+        <td>
+          <h3>Ankita Sinha</h3>
+          <img
+            src="./Images/ankita.jpg"
+            alt="Ankita Sinha"
+            width="300"
+            height="150"
+          />
+          <p>Ankita Sinha &#8211; A travel adventure fashion blogger</p>
+          <p>
+            An avid traveler and an even more avid travel blogger, Ankita Sinha
+            has her heart clearly set on exploring the wide world out there.
+            Keeping true to her desire, she has traveled to no less than 7
+            countries within a span of just 2 years. If you go through her blog,
+            you will realize that she has a way with words too and manages to
+            depict her travel stories in a beautiful way. A travel adventure
+            fashion blogger, she is often in search of an adrenaline rush. If
+            you are interested in exploring the adventurous side of a
+            destination, the blog of this award-winning travel enthusiast is the
+            one you should be scrolling through.
+          </p>
+          <p>
+            <strong>Blog</strong>:
+            <a href="http://www.ankionthemove.com/"
+              >http://www.ankionthemove.com/</a
+            >
+          </p>
+        </td>
+        <td>
+          <h3>Dheeraj Sharma</h3>
+          <img
+            src="./Images/dheeraj.jpg"
+            alt="Dheeraj Sharma"
+            width="300"
+            height="150"
+          />
+          <p>Dheeraj Sharma &#8211; Software Professional and Road Tripper</p>
+          <p>
+            His blog is titled 'Devil on Wheels', which is in sync with his
+            desire to drive across new destinations and share his experiences
+            through his blog. By profession, Dheeraj is a software professional
+            but his heart lies in exploring new places by road. He has a special
+            affinity for the Himalayas, and his blog posts depict his infinite
+            love for this region. In fact, you can find information about
+            several off-beat destinations in the Himalayan region in his travel
+            writings. If you are planning to explore the Himalayas or the
+            Leh-Ladakh territory, Dheeraj's blog is a must read.
+          </p>
+          <p>
+            <strong>Blog</strong>:
+            <a href="https://devilonwheels.com/">https://devilonwheels.com/</a>
+          </p>
+        </td>
+      </tr>
+    </table> -->
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+</html>

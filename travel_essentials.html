@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .header p {
+        padding: 0 20px 0 20px;
+        text-align: justify;
+        /* justify-content: flex-end; */
+      }
+      .header h3 {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      .row {
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
+      .row .col-sm {
+        /* border-style: solid;
+        border-color: black; */
+        padding: 0 40px;
+        text-align: justify;
+      }
+
+      .row .col-sm .anu {
+        display: block;
+        margin: 10px auto 10px auto;
+        width: 75%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Navigation">
+      <nav class="navbar navbar-expand-lg py-3 navbar-dark shadow-sm">
+        <div class="container">
+          <a href="Home.html" class="navbar-brand">
+            <!-- Logo Image -->
+            <img
+              src="./Images/Visit_India_logo.png"
+              height="80"
+              width="150"
+              alt=""
+              class="d-inline-block align-middle mr-2"
+            />
+            <!-- Logo Text -->
+            <!-- <span class="text-uppercase font-weight-bold">Tourism</span> -->
+          </a>
+
+          <button
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            class="navbar-toggler"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a href="Home.html" class="nav-link"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Destinations
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Popular Destinations</a>
+                  <a class="dropdown-item" href="#">Spiritual Destinations</a>
+                  <a class="dropdown-item" href="#">Heritage Sites</a>
+                  <a class="dropdown-item" href="#"
+                    >State & Union Territories</a
+                  >
+                  <a class="dropdown-item" href="#">All Destinations</a>
+
+                  <!-- <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a> -->
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="Experiences.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Experiences
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="Experiences.html"
+                    >Festivals & Events</a
+                  >
+                  <a class="dropdown-item" href="Experiences.html">Heritage</a>
+                  <a class="dropdown-item" href="Experiences.html">Spiritual</a>
+                  <a class="dropdown-item" href="Experiences.html">Adventure</a>
+                  <a class="dropdown-item" href="Experiences.html"
+                    >Nature And Wildlife</a
+                  >
+                  <a class="dropdown-item" href="Experiences.html">Art</a>
+                  <a class="dropdown-item" href="Experiences.html"
+                    >Food & Cuisine</a
+                  >
+                  <a class="dropdown-item" href="Experiences.html">Luxury</a>
+                  <a class="dropdown-item" href="Experiences.html"
+                    >Yoga & Wellness</a
+                  >
+                  <a class="dropdown-item" href="Experiences.html"
+                    >UNESCO World Heritage Sites</a
+                  >
+                  <a class="dropdown-item" href="#">Museums in India</a>
+                  <a class="dropdown-item" href="#">Crafts in India</a>
+                  <!-- <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div> -->
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="Home.html" class="nav-link">Stay</a>
+              </li>
+              <li class="nav-item">
+                <a href="Shop.html" class="nav-link">Shops</a>
+              </li>
+              <li class="nav-item">
+                <a href="Tours.html" class="nav-link">Tours</a>
+              </li>
+              <li class="nav-item">
+                <a href="travel_essentials.html" class="nav-link">Essentials</a>
+              </li>
+              <li class="nav-item">
+                <a href="ContactUs.html" class="nav-link">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="travel">
+      <header align="center">
+        <h2><u>Travel Essentials and Tips</u></h2>
+      </header>
+
+      <main>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <h3>Visa and entry requirements India</h3>
+              <p>
+                Almost everyone requires a visa before travelling to India,
+                though the process for obtaining a standard tourist visa has
+                been streamlined a great deal in recent years, and online
+                applications are now accepted for shorter visits. If you’re
+                going to study or work, you’ll need to apply for a special
+                student or business visa.
+              </p>
+              For more information , click
+              <a
+                href="https://www.roughguides.com/india/visas-entry-requirements/"
+                >here</a
+              >
+              <p>
+                e-Visa Facility is available for nationals of many
+                countries/territories
+              </p>
+            </div>
+            <div class="col-sm">
+              <h3>Currency</h3>
+              <p>
+                The Indian Rupee is used here and notes come in denominations of
+                ₹5, ₹10, ₹20, ₹50, ₹100, ₹200, ₹500 and ₹2,000. Coins come in 1,
+                2, 5, 10 and 20 rupee.
+              </p>
+              <p>
+                Digital payment from Debit card, Credit card, Net banking etc
+                are allowed in rupees only.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <h3>Weather</h3>
+              <p>
+                It is not possible for one particular time to be the most ideal
+                to visit India or its varied parts.
+              </p>
+              <p>
+                The best time to visit India is between October and March, when
+                the weather is more likely to be warm, sunny, and dry. During
+                this time, the north offers clear blue skies. However, December
+                and January are much cooler, with potential fog, while the
+                higher Himalaya can be very cold, but with clearer mountain
+                views. Increasing temperatures in April and May can result in
+                excellent value trips, but you can expect high humidity and
+                thunderstorms. Ladakh, located in the far north, is most
+                accessible between June and September, when the rest of the
+                country experiences monsoon season. The best time to visit
+                India's southern states is from November onward, once the
+                monsoon has ended.
+              </p>
+            </div>
+            <div class="col-sm">
+              <h3>Languages</h3>
+              <p>
+                India is diverse country. Each part or region of country has
+                their own different language.They include, the following 21
+                modern Indian languages: Assamese, Bangla, Bodo, Dogri,
+                Gujarati, Hindi, Kashmiri, Kannada, Konkani, Maithili,
+                Malayalam, Manipuri, Marathi, Nepali, Oriya, Punjabi, Tamil,
+                Telugu, Santali, Sindhi, and Urdu.
+              </p>
+              <p>
+                If you know English and Hindi then you can easily communicate in
+                almost all part of India.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <h3>Internet connectivity</h3>
+              <p>
+                If you're traveling to India and want to stay connected to the
+                Internet to share your journey on Instagram, keep in touch with
+                your loved ones on WhatsApp or use Google Maps to get to that
+                landmark they recommended, here are your options for Internet in
+                India. The best alternative to have internet in India is to buy
+                a SIM card for India, both because it is much cheaper than
+                paying roaming and because it is so easy to use. Tourist can use
+                public Wifi (available in some place) or Mobile hotspt
+              </p>
+              let's look at all the options for having internet in India<a
+                href="https://travelistos.com/en/india/internet-in-india/"
+              >
+                for Internet.</a
+              >
+            </div>
+            <div class="col-sm">
+              <h3>Emergency</h3>
+              <h3 align="center"></h3>
+              <p>
+                Safety is an essential part of the tourist product and, in this
+                sense, is intertwined with the quality of tourist service.
+                Ensured safety signifies higher quality of tourist service.
+                India is pursuing safety and respect of tourists' interest and
+                rights seriously. Subject to their individual circumstances, the
+                respective State Government and Union Territory Administrations
+                continue to work with the respective agencies to look into the
+                safety and security of the tourists.
+              </p>
+              Other Helpline numbers if needed in
+              <a
+                href="https://www.incredibleindia.org/content/incredibleindia/en/emergency.html#:~:text=Tourist%20Helpline%20%E2%80%93%201363%20or%201800%2011%201363&text=Ensured%20safety%20signifies%20higher%20quality,tourists'%20interest%20and%20rights%20seriously."
+              >
+                Emergency</a
+              >
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+</html>

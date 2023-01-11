@@ -1,0 +1,17 @@
+.Navigation {
+  box-shadow: 2px black;
+}
+.Navigation .navbar .container .nav-link {
+  color: black;
+}
+
+.Navigation .navbar a {
+  font-size: large;
+  font-weight: bold;
+}
+
+.Navigation .navbar a:hover {
+  font-size: large;
+  font-weight: bolder;
+  color: grey;
+}

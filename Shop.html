@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .mid {
+        text-align: center;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border-style: solid;
+        border-color: skyblue;
+        border-radius: 10px;
+      }
+      #about {
+        background: skyblue;
+        color: #120e01;
+      }
+      h2 {
+        color: black;
+      }
+
+      p {
+        font-size: 25;
+        color: black;
+      }
+      h4 {
+        padding-top: 10px;
+      }
+      .header p {
+        padding: 0 20px 0 20px;
+        text-align: justify;
+        /* justify-content: flex-end; */
+      }
+      .header h3 {
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 15px;
+      }
+      .row {
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
+      .row .col-sm {
+        padding: 2px 40px;
+        text-align: justify;
+      }
+      .i {
+        height: auto;
+        width: 100%;
+        padding-top: 10px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Navigation">
+      <nav class="navbar navbar-expand-lg py-3 navbar-dark shadow-sm">
+        <div class="container">
+          <a href="Home.html" class="navbar-brand">
+            <!-- Logo Image -->
+            <img
+              src="./Images/Visit_India_logo.png"
+              height="80"
+              width="150"
+              alt=""
+              class="d-inline-block align-middle mr-2"
+            />
+            <!-- Logo Text -->
+            <!-- <span class="text-uppercase font-weight-bold">Tourism</span> -->
+          </a>
+
+          <button
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            class="navbar-toggler"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a href="Home.html" class="nav-link"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Destinations
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Popular Destinations</a>
+                  <a class="dropdown-item" href="#">Spiritual Destinations</a>
+                  <a class="dropdown-item" href="#">Heritage Sites</a>
+                  <a class="dropdown-item" href="#"
+                    >State & Union Territories</a
+                  >
+                  <a class="dropdown-item" href="#">All Destinations</a>
+
+                  <!-- <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a> -->
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="Experiences.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Experiences
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="Experiences.html"
+                    >Festivals & Events</a
+                  >
+                  <a class="dropdown-item" href="Experiences.html">Heritage</a>
+                  <a class="dropdown-item" href="Experiences.html">Spiritual</a>
+                  <a class="dropdown-item" href="Experiences.html">Adventure</a>
+                  <a class="dropdown-item" href="Experiences.html"
+                    >Nature And Wildlife</a
+                  >
+                  <a class="dropdown-item" href="Experiences.html">Art</a>
+                  <a class="dropdown-item" href="Experiences.html"
+                    >Food & Cuisine</a
+                  >
+                  <a class="dropdown-item" href="Experiences.html">Luxury</a>
+                  <a class="dropdown-item" href="Experiences.html"
+                    >Yoga & Wellness</a
+                  >
+                  <a class="dropdown-item" href="Experiences.html"
+                    >UNESCO World Heritage Sites</a
+                  >
+                  <a class="dropdown-item" href="#">Museums in India</a>
+                  <a class="dropdown-item" href="#">Crafts in India</a>
+                  <!-- <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div> -->
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="Home.html" class="nav-link">Stay</a>
+              </li>
+              <li class="nav-item">
+                <a href="Shop.html" class="nav-link">Shops</a>
+              </li>
+              <li class="nav-item">
+                <a href="Tours.html" class="nav-link">Tours</a>
+              </li>
+              <li class="nav-item">
+                <a href="travel_essentials.html" class="nav-link">Essentials</a>
+              </li>
+              <li class="nav-item">
+                <a href="ContactUs.html" class="nav-link">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="Shop">
+      <header align="center">
+        <h3>Discover Indian Brands. Made With Passion.</h3>
+        <h3>Where shopping becomes an experience!</h3>
+      </header>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h2 align="center" class="mid" id="about">
+              Souvenirs You Can't Leave India Without Buying!
+            </h2>
+            <img
+              src="./Images/souvenir.gif"
+              alt="Souvenirs You Can't Leave India Without Buying!"
+              align="center"
+              class="i"
+            />
+
+            <h4>
+              India is land which offers millions of different, unique
+              souvenirs. I bring you a list and links of must-buy souvenirs from
+              around the country which will remind you of your time in India.
+            </h4>
+            <h4>
+              From Jammu to Tamil Nadu, Rajasthan to Tripura; we bring you a
+              list of souvenirs you need to buy when you find yourself
+              travelling in India across the 29 states:
+            </h4>
+            <p>
+              Souvenir shopping is serious business. One can be a light
+              traveller with just a backpack or someone who travels with an
+              additional empty suitcase, but no matter, local souvenirs will
+              catch your eye and you&rsquo;d want to take a small token of your
+              travels back home with you. They act as reminders on a day when
+              you really wished you were on the road. At least, that&rsquo;s
+              what I feel. For a vast, diverse country like India, it is so
+              tough to decide what to take back home when visiting. Obviously
+              travelling through the length and breadth of the country on just
+              one holiday isn&rsquo;t possible but no matter which part you
+              choose, you will always come across different local souvenirs to
+              take back. Among the 29 states, India has a host of GI-tagged
+              souvenirs which one can take back.
+            </p>
+            Here, useful links for<a
+              href="https://www.outlookindia.com/outlooktraveller/see/story/68896/get-your-hands-on-these-indias-own-geographical-indication-tagged-products"
+            >
+              GI tagged souvenirs</a
+            >
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <h3 align="center" class="mid" id="about">
+              Iconic Indian souvenirs
+            </h3>
+            <p>
+              Different places of india has variety of its own products and
+              souvenirs.Be it for gifting purpose or personal use - souvenir
+              hunting is and will always be an integral part of travelling and
+              vacation. The human instinct of collecting things that catch our
+              fancy is the push behind a traveller taking time out of his/her
+              tour plan to indulge in some souvenir trail. The local markets are
+              the ideal places to bag some indigenous and home grown items,
+              soaked in the flavour of the land you travel through. India is no
+              exception. This massive country with innumerable cultures is home
+              to thousands of hand made products that serve as perfect
+              souvenirs. If you are embarking on a voyage in India, these famous
+              souvenirs are what you must kitty in.
+            </p>
+
+            <p>Take home a momento that's been proudly made in India.</p>
+            <a href="https://www.taleof2backpackers.com/indian-souvenirs/"
+              >Iconic souvenirs</a
+            >
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <h3 align="center" class="mid" id="about">Discover Local brands</h3>
+            <p>
+              India has always been an exciting melting pot of different
+              cultures and traditions, thanks to its massive size and
+              geographical diversity. In fact, each of the 29 states here has
+              something unique to offer to travellers, in terms of landscape,
+              history, heritage, cuisine, and even souvenirs. And since shopping
+              for souvenirs is an important part of a memorable vacation,
+              knowing what to buy where can help. Each state in India has one or
+              more products that are unique to the place, such as bandhini
+              products in Gujarat, brass sculptures in Jharkhand, coconut shell
+              artefacts in Goa and coir products in Kerala. And these unique
+              products make for amazing souvenirs that help you take beautiful
+              memories back home from the trip. So, whichever state you choose
+              to visit next, make sure you buy a few local and unique products
+              to add to your souvenir collection.
+            </p>
+            <p>
+              To make things simple for you, we have curated a
+              <a
+                href="https://www.holidify.com/pages/souvenirs-in-india-367.html"
+                >list of souvenirs</a
+              >
+              that you can buy from the 29 states in India.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+</html>
